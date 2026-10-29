@@ -1,9 +1,9 @@
 <!-- 
   Source / Tech Stack Attribution:
-  - Architecture: ELT Pipeline (DuckDB to Static JSON export)
-  - Data Source: London Air Quality Network (LAQN) API (https://www.londonair.org.uk/Londonair/API/)
-  - Mapping Library: Leaflet.js (https://leafletjs.com/)
-  - Styling: Custom CSS Grid / Flexbox Layout
+- Architecture: ELT Pipeline (DuckDB to Static JSON export)
+- Data Source: London Air Quality Network (LAQN) API (https://www.londonair.org.uk/Londonair/API/)
+- Mapping Library: Leaflet.js (https://leafletjs.com/)
+- Styling: Custom CSS Grid / Flexbox Layout
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -219,11 +219,11 @@
         <!-- Executive Policy Summary Callout Box -->
         <div class="executive-summary">
             <h3>Executive Policy Summary</h3>
-            <p>With nearly half of the network concentrated on roadside telemetry, monitoring infrastructure is heavily weighted toward high-traffic commuter exposure. This enables city planners to instantly evaluate pedestrian risk and prioritize pollution mitigation zones across London's 33 boroughs.</p>
+            <p>With nearly half of the network concentrated on roadside telemetry, monitoring infrastructure is heavily weighted toward high-traffic commuter exposure. This enables city planners to instantly evaluate pedestrian risk and prioritise pollution mitigation zones across London's 33 boroughs.</p>
         </div>
 
-        <!-- High-level KPI Cards including Consulting Metric -->
-        <div class="stats-grid">
+        <!-- High-level KPI Cards (Architecture Card Removed) -->
+        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
             <div class="stat-card">
                 <h3>Total Active Stations</h3>
                 <div class="value" id="total-stations">Loading...</div>
@@ -235,10 +235,6 @@
             <div class="stat-card">
                 <h3>Roadside Exposure Share</h3>
                 <div class="value" id="roadside-share">Loading...</div>
-            </div>
-            <div class="stat-card">
-                <h3>Primary Architecture</h3>
-                <div class="value" style="font-size: 1.2rem; margin-top: 5px;">DuckDB &rarr; Static JSON</div>
             </div>
         </div>
 
